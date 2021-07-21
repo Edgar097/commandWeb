@@ -20,6 +20,7 @@ class Counter extends Component {
         </ul>
     };
     render() {
+        console.log('Counter Rendered')
         return (
             <div>
                 <span className={this.getBadgeClasses()}>
