@@ -2,7 +2,9 @@
 import React, { Component } from 'react';
 
 class Counter extends Component {
-
+    componentWillUnmount(){
+        console.log('Counter Unmount')
+    }
     styles = {
         fontSize: 50,
         fontWeight: 'bold'
