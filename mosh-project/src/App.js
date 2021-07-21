@@ -32,8 +32,9 @@ class App extends Component{
       this.setState({counters}) 
   };
   handleDecrement = counter => {
-    let counters = [...this.state.counters];
+    const counters = [...this.state.counters];
     const index = counters.indexOf(counter);
+    counters[index] = {...counter}
     counters[index].value --;
     this.setState({counters})
   }
